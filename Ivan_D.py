@@ -11,6 +11,7 @@ class FirstApp(MainApp):
                     QWidget {
                         background-color: #4B0082;  /* Колір фону */
                         border: 0px solid #800080;   /* Колір і товщина рамки */
+         
                         border-radius: 25px;           /* Закруглення кутів рамки */
                     }
                     QLabel {
@@ -32,12 +33,14 @@ class FirstApp(MainApp):
                     QPushButton:hover {
                         background-color: #9932CC;  /* Колір кнопки при наведенні */
                     }
-                """)
+             """)
 
         # Створюю генератор пароля.
 
         # Створюю ще один горизонтальний layout для введення довжини пароля.
         self.h_layout2 = Qtw.QHBoxLayout()
+
+
         self.v_layout.addLayout(self.h_layout2)
 
         # Створюю напис для поля введення довжини пароля.
